@@ -361,15 +361,20 @@
 }
 
 .contact__left {
-	
+	display: inline-block;
+	vertical-align: top;
+	width: 490px;
+	padding-left: 60px;
 }
 
 .contact-line {
-	
+	margin-bottom: 20px;
 }
 
 .contact__right {
-	
+	display: inline-block;
+	vertical-align: top;
+	width: 489px;
 }
 
 .contact__ico {
