@@ -1,0 +1,42 @@
+.special--white {
+	background: #ecf5f7;
+	padding: 20px 25px;
+}
+
+.special--white .coutdown__close {
+	display: none;
+}
+
+.special--white .special__title {
+	color: #363636;
+}
+
+.special--white .special__title span {
+	color: #72a3ae;
+}
+
+.special--white .special__descr {
+	color: #363636;
+}
+
+.service-title img {
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+
+.content__back {
+	margin-bottom: 20px;
+	display: block;
+}
+
+.content__back:before {
+	margin-right: 5px;
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 18px;
+	height: 19px;
+	background: url(../img/sprite.png) -85px 0;
+}

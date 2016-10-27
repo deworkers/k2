@@ -53,7 +53,7 @@
 					<div class="coutdown__min">Минут</div>
 					<div class="coutdown__sec">Секунд</div>
 				</div>
-
+				<div class="coutdown__close"></div>
 			</div>
 		</div>
 	</div>
@@ -70,11 +70,14 @@
 				<a href="#" class="social__inst"></a>
 			</div>
 			<div class="header__main-menu">
-				<a href="#" class="main-menu__one">Услуги</a>
-				<a href="#" class="main-menu__one">о нас</a>
-				<a href="#" class="main-menu__one">Новости</a>
-				<a href="#" class="main-menu__one">Контакты</a>
-				<a href="#" class="main-menu__one">Обратная связь</a>
+				<div class="header__mobile-menu">Меню</div>
+				<div class="main-menu__list">
+					<a href="#" class="main-menu__one">Услуги</a>
+					<a href="#" class="main-menu__one">о нас</a>
+					<a href="#" class="main-menu__one">Новости</a>
+					<a href="#" class="main-menu__one">Контакты</a>
+					<a href="#" class="main-menu__one">Обратная связь</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -161,35 +164,35 @@
 
 		<div class="wrap">
 			<div class="contact__left">
-				<div class="contact-line">
+				<div class="contact-line contact-line--phone">
 					+7 (343) 206-41-00;<br>
 					+7 (343) 388-28-40
 				</div>
-				<div class="contact-line">
+				<div class="contact-line contact-line--icq">
 					icq: 674822149
 				</div>
-				<div class="contact-line">
+				<div class="contact-line contact-line--mail">
 					pravo2k@yandex.ru
 				</div>
-				<div class="contact-line">
+				<div class="contact-line contact-line--adres">
 					г.Екатеринбург, ул. Еремина, д. 12,<br> 
 					офис 208 (станция метро Динамо).
 				</div>
 			</div>
 			<div class="contact__right">
-				<div class="contact-line">
-					<a href="#" class="contact__ico"></a>
-					<a href="#" class="contact__ico"></a>
-					<a href="#" class="contact__ico"></a>
+				<div class="contact-line contact-line--mobile">
+					<a href="#" class="contact__ico contact__ico--wiber"></a>
+					<a href="#" class="contact__ico contact__ico--whatsup"></a>
+					<a href="#" class="contact__ico contact__ico--telegram"></a>
 					8 (965) 508 94 68
 				</div>
 				<div class="contact-line">Карточка предприятия (реквизиты): <a class="download" href="#">скачать файл</a></div>
 				<div class="contact-line">Читайте о нас на Флампе и следите за нами в социальных сетях:</div>
 				<div class="contact-line">
-					<a href="#" class="contact__ico"></a>
-					<a href="#" class="contact__ico"></a>
-					<a href="#" class="contact__ico"></a>
-					<a href="#" class="contact__ico"></a>
+					<a href="#" class="contact__ico contact__ico--flamp"></a>
+					<a href="#" class="contact__ico contact__ico--inst"></a>
+					<a href="#" class="contact__ico contact__ico--vk"></a>
+					<a href="#" class="contact__ico contact__ico--fb"></a>
 				</div>
 			</div>
 		</div>
@@ -209,16 +212,15 @@
 					<input type="text" name="phone" placeholder="Номер телефона">
 				</div>
 				<div class="order-form__line">
-					<input type="text" name="email" placeholder="E-mail">
+					<input type="text" name="email" placeholder="E-mail" class="error">
 				</div>
 				<div class="order-form__line">
 					<textarea name="message" placeholder="Сообщение"></textarea>
 				</div>
 				<div class="order-form__line">
-					<label>
-						<input type="checkbox" name="valid">
-						Поставьте галочку, если вы не робот 
-					</label>
+					
+						<input id="valid" type="checkbox" name="valid" >
+						<label for="valid">Поставьте галочку, если вы не робот</label>
 				</div>
 				<div class="order-form__line">
 					<button type="submit">Отправить</button>
@@ -232,15 +234,20 @@
 	</div>
 
 	<div class="footer">
-		<div class="footer__copy">© 2012-2016 г. Все права защищены.<br>
-		+7 (343) 206-41-00</div>
-		<div class="footer-menu">
-			<a href="#" class="footer-menu__one">Услуги</a>
-			<a href="#" class="footer-menu__one">о нас</a>
-			<a href="#" class="footer-menu__one">Новости</a>
-			<a href="#" class="footer-menu__one">Контакты</a>
+		<div class="footer-inn">
+			<div class="footer__copy"><span>© 2012-2016 г. Все права защищены.</span><br>
+			+7 (343) 206-41-00</div>
+			<div class="footer-menu">
+				<a href="#" class="footer-menu__one">Услуги</a>
+				<a href="#" class="footer-menu__one">о нас</a>
+				<a href="#" class="footer-menu__one">Новости</a>
+				<a href="#" class="footer-menu__one">Контакты</a>
+			</div>
+			<div class="footer__counter">
+				<img src="tmp/counter.jpg" alt="">
+			</div>
+			<div class="clear"></div>
 		</div>
-		<div class="footer__quter"></div>
 	</div>
 	
 </body>
